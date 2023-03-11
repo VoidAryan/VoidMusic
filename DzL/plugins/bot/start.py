@@ -225,7 +225,7 @@ async def start_comm(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(get_command("START_COMMAND"))
+    filters.command(get_command("VCSTART_COMMAND"))
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
