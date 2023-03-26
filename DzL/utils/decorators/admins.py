@@ -27,7 +27,7 @@ def AdminRightsCheck(mystic):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    "Bot sedang diperbaiki. Harap tunggu beberapa saat..."
+                    "Bots are being repaired.  Please wait a moment..."
                 )
         if await is_commanddelete_on(message.chat.id):
             try:
